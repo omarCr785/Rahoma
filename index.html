@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Beloved Rahomaaa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-br from-pink-200 via-pink-100 to-rose-200 min-h-screen overflow-hidden">
+    <!-- Language Toggle -->
+    <div class="fixed top-4 left-4 z-50">
+        <button id="languageToggle" class="bg-white bg-opacity-30 backdrop-blur-sm rounded-full p-3 shadow-lg hover:bg-opacity-50 transition-all">
+            <span id="languageText">AR</span>
+        </button>
+    </div>
+
+    <!-- Audio Player -->
+    <div class="fixed top-4 right-4 z-50">
+<button id="musicToggle" class="bg-white bg-opacity-30 backdrop-blur-sm rounded-full p-3 shadow-lg hover:bg-opacity-50 transition-all">
+            <i data-feather="music"></i>
+        </button>
+        <audio id="bgMusic" loop>
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 flex flex-col items-center justify-center min-h-screen relative z-10">
+        <!-- Image Container -->
+        <div class="relative mb-8 group">
+            <div class="absolute inset-0 rounded-full bg-pink-400 blur-xl opacity-70 group-hover:opacity-90 transition-all duration-500 animate-pulse"></div>
+            <div class="absolute inset-0 rounded-full bg-rose-300 blur-md opacity-50 group-hover:opacity-70 transition-all duration-700"></div>
+            <!-- Replace this image with your own by changing the src below -->
+            <img src="rahma.jpg" alt="Rahma" 
+class="relative z-10 w-48 h-48 md:w-64 md:h-64 rounded-full object-cover object-center border-4 border-white border-opacity-50 shadow-xl transform transition-all duration-300 hover:scale-105 heartbeat">
+        </div>
+
+        <!-- Message -->
+        <div class="text-center max-w-2xl px-6 fade-in">
+            <h1 class="text-3xl md:text-4xl font-bold text-rose-800 font-dancing mb-6">For My Beloved Rahma</h1>
+            <p class="text-lg md:text-xl text-rose-700 leading-relaxed mb-4 font-poppins">
+                On this special day, I just wanted to say I love you, my most precious one.
+            </p>
+            <p class="text-lg md:text-xl text-rose-700 leading-relaxed mb-4 font-poppins">
+                I love you, the most beautiful girl in this whole world <span class="text-pink-500">💖</span>
+            </p>
+            <p class="text-xl md:text-2xl text-rose-600 font-bold italic font-dancing mt-6">
+                Love You Ya Kokyyyyy <span class="text-pink-500 animate-bounce inline-block">😘</span>
+            </p>
+        </div>
+    </main>
+
+    <!-- Floating Hearts -->
+    <div id="heartsContainer" class="fixed inset-0 overflow-hidden pointer-events-none"></div>
+
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+<script src="https://huggingface.co/deepsite/deepsite-badge.js"></script>
+</body>
+</html>
